@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-footer-row,
+.mat-header-row,
+.mat-row {
+  width: 100%;
+}
+
+mat-card {
+  width: 100%;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #535D80;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: #535D80;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

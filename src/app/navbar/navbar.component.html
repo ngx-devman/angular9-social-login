@@ -1,0 +1,37 @@
+<mat-toolbar color="primary" class="nav-toolbar">
+  <mat-toolbar-row>
+    <span class="menu-spacer"></span>
+    <a mat-button (click)="goHome()"> Home </a>
+    <a mat-button> Documents </a>
+    <a mat-button> About Us </a>
+    <a mat-button> Contact Us </a>
+    <a mat-button> User Document List </a>
+    <a mat-button> Subscribe </a>
+    <a *ngIf="!user" mat-raised-button color="info" class="nav-login" (click)="gotoLogin()"> Login</a>
+    <a *ngIf="user && loggedIn" color="info" class="nav-login">
+      <button mat-mini-fab [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>{{ user.name }}</span>
+
+        </button>
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>{{ user.email }}</span>
+        </button>
+        <button mat-menu-item (click)="signOut()">
+          <mat-icon>notifications_off</mat-icon>
+          <span>Sign out</span>
+        </button>
+      </mat-menu>
+    </a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-progress-bar *ngIf="loading"
+[mode]="'indeterminate'" value=30 >
+</mat-progress-bar>
+
+

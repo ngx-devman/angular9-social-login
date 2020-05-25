@@ -1,0 +1,21 @@
+.bg-transparent {
+  background-color: transparent;
+}
+
+:host {
+  height: 100%;
+}
+
+.photo {
+  object-fit: contain;
+}
+
+.login-card {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.auth-btn {
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+}
