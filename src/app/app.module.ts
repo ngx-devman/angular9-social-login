@@ -35,11 +35,11 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 const config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider('1014475769169-1gn9l2fb12r26h661rjk9s2nlokj7dsi.apps.googleusercontent.com')
+    provider: new GoogleLoginProvider('Google-ID')
   },
   {
     id: FacebookLoginProvider.PROVIDER_ID,
-    provider: new FacebookLoginProvider('2648874168692439')
+    provider: new FacebookLoginProvider('Facebook-ID')
   }
 ]);
 
